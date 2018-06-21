@@ -1,0 +1,394 @@
+
+/* general css */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Heebo', sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-color: black;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+canvas {
+  margin: 100 70 0 70;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 150px;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 35px;
+  margin-bottom: 40px;
+  margin-top: -30px;
+}
+
+h3 {
+  font-weight: 100;
+  font-size: 35px;
+}
+
+span {
+  display: inline-block;
+}
+
+input {
+    width: 300px;
+    font-weight: 100;
+    font-size: 45px;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 8px 0;
+    background: Transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+ol {
+  font-weight: 100;
+  list-style-position: inside;
+}
+
+li {
+  text-align: center;
+}
+
+
+/* classes css*/
+.heart-icon {
+  font-size: 29px;
+  color: white;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-big {
+  width: 125px;
+  height: 125px;
+  display: block;
+  margin: auto;
+}
+
+.alerts {
+  text-align: center;
+}
+
+.toggle {
+  position: absolute;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.button {
+    background-color: Transparent;
+    width: 600px;
+    font-weight: 100;
+    border: 0.5px solid white;
+    padding: 15px 40px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    font-size: 25px;
+}
+
+.instructions-button {
+    background-color: Transparent;
+    width: 400px;
+    font-weight: 100;
+    border: 0.5px solid white;
+    padding: 15px 40px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    font-size: 25px;
+}
+
+.button:hover,
+.instructions-button:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.landing {
+  border: none;
+}
+
+
+/* animations and keyframes*/
+.fadeInAndOut {
+    opacity: 1;
+    animation: fade 2.5s ease-out;
+}
+
+.fadeIn {
+    opacity: 1;
+    animation: fadein 1.5s ease-out;
+}
+
+.fadeOut {
+    opacity: 1;
+    animation: fadeout 2s ease-out;
+}
+
+.fade-appear {
+    display: none;
+}
+
+.blinkLine{
+    opacity: 1;
+    animation: blinkline 1.8s ease-out;
+}
+
+.fadeColorOut {
+  animation: fadecolorout 1s linear;
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1.5s ease-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-1.5px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translate3d(1.5px, 0, 0);
+  }
+}
+
+@keyframes fadecolorout {
+  0% {
+    opacity: 1;
+    color: red;
+  }
+
+  100% {
+    opacity: 1
+    color: white;
+  }
+}
+
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinkline {
+  0% {
+  box-shadow: 0 6px 4px -4px white;
+  background: rgba(255, 255, 255, 0.07);
+  }
+
+  100% {
+  box-shadow: none;
+  background: none;
+  }
+}
+
+
+/* css of id's*/
+#game-over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#scoreboard {
+  width: 100%;
+  padding-top: 10px;
+  height: 100px;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+#score-container {
+  float: right;
+  vertical-align: top;
+  margin-right: 40px;
+  font-weight: 100;
+  font-size: 17.5px;
+  width: 400px;
+  height: 60px;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#settings-container {
+  position: absolute;
+  padding: 0 20px 0 20px;
+  margin-left: 40px;
+  font-weight: 100;
+  font-size: 17.5px;
+  width: 400px;
+  height: 60px;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#score-container p {
+  font-size: 24.5px;
+  margin: 15px 20px;
+}
+
+#settings-container p {
+  margin: 15px 20px 15px 0;
+}
+
+#reload {
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#reload:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#click-hint:hover {
+animation: shake 1s linear;
+}
+
+#mute-container {
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+}
+
+#start-landing,
+#user-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#submit {
+  border: none;
+}
+
+#welcome {
+  font-size: 27px;
+  font-weight: 100;
+  margin: 15px 20px;
+  position: absolute;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#fade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(black, Transparent);
+}
+
+#mute-sound,
+#play-sound {
+  position: absolute;
+}
+
+#instructions {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#video {
+  margin: 0 auto;
+}
+
+#instructions h3 {
+  text-align: center;
+}

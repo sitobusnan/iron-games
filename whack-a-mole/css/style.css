@@ -1,0 +1,116 @@
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4d802+0,f2df54+97 */
+  background: #f4d802; /* Old browsers */
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    #f4d802 0%,
+    #f2df54 97%
+  ); /* FF3.6-15 */
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    #f4d802 0%,
+    #f2df54 97%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(
+    ellipse at center,
+    #f4d802 0%,
+    #f2df54 97%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4d802', endColorstr='#f2df54',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+h1 {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-size: 7.5em;
+}
+.hstart {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-size: 10em;
+  margin: 235px auto 0 auto;
+}
+.row {
+  margin-top: 1%;
+}
+.s-v {
+  font-size: 3em;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+}
+
+.name {
+  font-size: 3em;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+}
+#mole-game {
+  text-align: center;
+  /* margin-top: 30px; */
+}
+
+.mole {
+  width: 25%;
+  height: 240px;
+  background-image: url("../img/topos-tierra.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto 15px;
+  display: inline-block;
+}
+.active,
+.push {
+  transition: all 0.15s linear;
+  position: relative;
+}
+.active::after,
+.push::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/topos-topos.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 46%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.push::after {
+  background-image: url(../img/topos-topos-push.png);
+}
+
+.btn-outline-dark {
+  margin-top: 2%;
+  margin-left: 30%;
+  padding: 70px;
+  font-family: Comic, "Courier New", Courier, monospace;
+  font-size: 80px;
+}
+.container {
+  font-family: Comic, "Courier New", Courier, monospace;
+  font-size: 30px;
+  color: rgb(7, 145, 7);
+  border: 1px solid black;
+  padding: 5%;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#modal-end {
+  display: none;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}

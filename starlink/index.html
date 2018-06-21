@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Starlink - Connect the stars</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="img/tab-icon.png">
+  <meta name="description" content="Online Canvas Game Project">
+  <meta name="keywords" content="HTML,CSS,JavaScript,Game,Canvas">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:100,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <div style="display:none">
+  <img src="../img/background.jpg">
+  </div>
+</head>
+
+<body>
+  <!-- instructions div -->
+  <div id="instructions" class="hidden">
+    <h3>How to play</h3>
+    <ol>
+      <li>The first star to click is always marked yellow</li>
+      <li>Remember the given sequence</li>
+      <li>Click the stars in the correct order</li>
+      <li>Forgot where to click? Get a hint. You have 3</li>
+      <li>If you did well, a new star will be added</li>
+      <li>How many can you remember? Let's start!</li>
+    </ol>
+    <div id="video">
+      <video width="320" height="240" autoplay loop src="img/Instructions.mov"></video>
+    </div>
+    <button id="after-instruction" class="instructions-button">Got it, let's start</button>
+  </div>
+
+  <!-- background fade div -->
+  <div id="fade">
+  </div>
+
+  <!-- scoreboard  div -->
+  <header id="scoreboard" class="hidden">
+    <div id="settings-container">
+      <img id="reload" class="icon" src="img/001-arrows.png">
+      <p>Reset</p>
+      <div id="click-hint">
+        <img class="icon" id="head" src="img/003-human.png">
+      </div>
+      <p>Get hint <span id="hint">3</span></p>
+      <i class="material-icons heart-icon">favorite</i>
+      <p>Lives <span id="lives">3</span></p>
+    </div>
+    <div id="score-container">
+      <p>Score <span class="score">0</span></p>
+    </div>
+  </header>
+
+  <!-- landing page divs -->
+  <div id="start-landing" class="toggle">
+    <h1 class="alerts">Starlink.</h1>
+    <button id="start-new-game" class="button">Start new game</button>
+  </div>
+  <div id="user-input" class="toggle hidden">
+    <h1 class="alerts">Enter your name</h1>
+    <form>
+      <input id="txt_name" type="text" name="username" autofocus><br>
+    </form>
+    <button id="submit" class="button">Submit</button>
+  </div>
+
+  <!-- pop up divs -->
+  <div id="no-hint" class="toggle hidden">
+    <h1 class="alerts">No hints left!</h1>
+  </div>
+  <div id="minus-one" class="toggle hidden">
+    <h1 class="alerts">-1</h1>
+  </div>
+  <div id="game-over" class="toggle hidden">
+    <h1 class="alerts">Game over</h1>
+    <h2 class="alerts"><span class="welcome-name"></span>, your high score is:  <span class="score">0</span></h1>
+    <button id="new-game" class="button">New game</button>
+  </div>
+  <div id="well-done" class="toggle hidden">
+    <h1 class="alerts">Well done!</h1>
+  </div>
+  <div id="welcome" class="toggle hidden">
+    <p>Welcome, <span class="welcome-name"></span>!</p>
+  </div>
+
+<!-- mute container -->
+  <div id="mute-container">
+    <div id="mute-sound" class="hidden">
+    <img class="icon" id="mute" src="img/002-sound.png">
+  </div>
+  <div id="play-sound">
+    <img class="icon" id="play" src="img/001-sound-1.png">
+  </div>
+    <audio id="audio" autoplay loop hidden>
+     <source src="sound/bgloop.mp3" type="audio/mp3">
+    </audio>
+  </div>
+
+<!-- canvas container -->
+  <div class="general-container">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="lib/text.js"></script>
+  <script src="lib/sounds.js"></script>
+  <script src="lib/star.js"></script>
+  <script src="lib/game.js"></script>
+  <script src="lib/main.js"></script>
+</body>
+
+</html>

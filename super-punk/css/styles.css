@@ -1,0 +1,181 @@
+body{
+  font-family: 'Underdog', cursive;
+  font-size: 1.5em;
+  background: #000 !important;
+  color: #fff !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row-pang{
+  margin: 10px;
+}
+
+.letter-pang{
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.letter-pang-p{
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 150px;
+  margin: 0;
+}
+
+#super-punk{
+  background-image: url('../img/super.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  -moz-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+}
+
+#pang-p{
+  background-image: url('../img/cresta_p.png');
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+
+#pang-u{
+  background-image: url('../img/u.png');
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+
+#pang-n{
+  background-image: url('../img/n.png');
+  -moz-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+}
+
+#pang-k{
+  background-image: url('../img/k.png');
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+}
+
+#yourElement {
+  -vendor-animation-duration: 3s;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+
+#instructions{
+  font-family: 'Underdog', cursive;
+  font-size: 1.5em;
+  margin-left: 40px;
+  color: #fff;
+  -moz-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+}
+
+.play-btn{
+  cursor: pointer;
+  margin-top: 10px;
+  width: 150px;
+  font-size: 1.5em !important;
+}
+
+.author{
+  text-align: right;
+  margin-top: 30px;
+}
+
+.btn-twitter, .btn-linkedin{
+  margin-left: 5px;
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}
+
+a, .follow{
+  margin-top: 30px;
+  text-align: right;
+  font-size: 0.9em;
+  display: inline-block;
+}
+
+#board{
+  background-image: url('../img/punk-scene1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border: 10px ridge green;
+}
+
+.player{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+#player1{
+  background-image: url('../img/player1-shoot.png');
+}
+
+.ball{
+  border-radius: 100px;
+  background-image: url('../img/ball.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.life{
+  background-image: url('../img/life.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.final-msg{
+  height: 300px;
+  width: 400px;
+  border-radius: 25px;
+  font-size: 24px;
+  margin: 100px auto;
+  color: green;
+  background-color: #000;
+  text-align: center;
+  padding: 50px;
+}
+
+.walk-left{
+  background-image: url('../img/walk-left.gif') !important;
+}
+
+.walk-right{
+  background-image: url('../img/walk-right.gif') !important;
+}
+
+#hideObject{
+  position: absolute;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  height: 30px;
+  width: 30px;
+}
+
+.beer{
+  background-image: url('../img/beer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clock{
+  background-image: url('../img/clock.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.drug{
+  background-image: url('../img/pill.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

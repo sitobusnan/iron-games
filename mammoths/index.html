@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pablo's Crazy Mammoths</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <div id="winnerDiv">
+      <h1> The super Winner is: </h1>
+      <img id="winnerImg" src="images/Mammoth10.png" alt="mammoth Winner">
+    </div>
+
+    <div id="game">
+
+      <div id="clasification">
+        <h1>Game clasification</h1>
+        <ol id="clasificationList">
+          <li id="1st">Mammoth 6 - jump Key: Space</li>
+          <li id="2nd">Mammoth 10 - jump Key: Up</li>
+          <li id="3rd">Mammoth 23 - jump Key: Shift</li>
+          <li id="4th">Mammoth 69 - jump Key: Enter</li>
+        </ol>
+      </div>
+
+      <div id="title">
+        <img src="images/title3.png" alt="title">
+      </div>
+
+      <div id="firstPosition">
+        <h1>First Mammoth</h1>
+        <img id="firstMammoth" src= "images/Mammoth10.png" alt="mammoth Winning">
+      </div>
+
+    </div>
+
+    <div id="holdPlay">
+      <button id="button" onclick="play()">Play</button>
+      <h1 id="gameTime"> Game time here! </h1>
+    </div>
+    <script src="js/mammoth.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>

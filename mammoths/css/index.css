@@ -1,0 +1,90 @@
+*{
+  font-family: 'Roboto Mono', monospace;
+  color: #2F4F4F;
+}
+
+#canvas{
+  background-color: #51c4e0;
+  position: relative;
+  z-index: 3;
+  display: none;
+}
+
+body{
+  margin: 0;
+  text-align: center;
+  background-image: url("../images/webBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+#winnerDiv{
+  z-index: 2000000;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 300px;
+  width: 100%;
+  display: none;
+}
+#winnerImg{
+  width: 4000px
+  height: auto;
+  transform: rotate(180deg);
+}
+
+#game{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+}
+#game > div{
+  padding: 40px;
+  z-index: 999;
+}
+
+#clasification h1{
+  margin: 1px;
+  margin-left: 20px;
+  font-size: 27px;
+}
+#clasificationList{
+  list-style: none;
+}
+#title img{
+    height: 200px;
+}
+#firstPosition h1{
+
+  margin: 1px;
+  font-size: 30px;
+
+}
+#firstPosition img{
+  transform: rotate(180deg);
+  height: 100px;
+  width: auto;
+  padding: 10px;
+}
+
+#holdPlay{
+  position: absolute;
+  bottom: 0;
+  z-index: 2000;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+#holdPlay button {
+  font-size: 20px;
+  background-color: #3dc4fd;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 25px;
+  border: 0;
+  box-shadow: 0;
+  border-radius: 5px;
+}
