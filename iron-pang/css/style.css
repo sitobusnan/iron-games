@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+#canvas {
+  border: 1px solid black;
+  background-image: url("../img/background-azteca.gif");
+}
+
+body {
+  background-image: url("../img/jungle2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
