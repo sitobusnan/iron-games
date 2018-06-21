@@ -1,0 +1,59 @@
+#uiViewContainer{
+  position: fixed;
+  bottom: 0px;
+  height: 120px;
+  width: 100vw;
+  display: flex;
+}
+
+#uiViewContainer .scoreboard{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 15px;
+  flex-grow: 1;
+}
+
+#uiViewContainer .scoreboard:first-child{
+  flex-direction: row;
+
+}
+
+#uiViewContainer .scoreboard .playerName{
+  flex-grow: 1;
+  text-align: center;
+}
+
+#uiViewContainer .scoreboard .playerAvatar{
+
+  width: 90px;
+  background-image: url("../images/face.png");
+  background-size: cover;
+}
+
+#uiViewContainer .scoreboard .playerAvatar.anna{
+  background-image: url("../images/char_anna.png");
+}
+#uiViewContainer .scoreboard .playerAvatar.mike{
+  background-image: url("../images/char_mike.png");
+
+}
+#uiViewContainer .scoreboard .playerAvatar.money{
+  background-image: url("../images/char_money.png");
+
+}
+#uiViewContainer .scoreboard .playerAvatar.frank{
+  background-image: url("../images/char_frank.png");
+
+}
+
+#uiViewContainer .scoreboard .playerStatus{
+  text-align: center;
+  flex-grow: 2;
+}
+
+#uiViewContainer .scoreboard .playerScore{
+  width: 90px;
+  text-align: center;
+  font-size: 2.9em;
+  line-height: 0px;
+}

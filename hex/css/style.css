@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:500,900');
+
+.btest {
+  border: 1px solid rgb(247, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5% !important;
+}
+
+body {
+  background-color: #ff82829d !important;
+}
+
+li{
+  display: inline-block;
+  list-style-type: none;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif !important;
+  font-weight: bold !important;
+  text-align: center;
+  font-size: 5.0em !important;
+  color: #202020 !important;
+  text-shadow: 1px 1px 2px rgba(245, 245, 245, 0.747) !important;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif !important; 
+  text-align: center;
+  color: rgba(3, 3, 3, 0.822) !important;
+  text-shadow: 1px 2px 1px rgba(43, 43, 43, 0.527) !important;
+}
+
+#score-p2 {
+  text-align: right;
+}
+
+.bg{
+  position: fixed !important;
+}
+
+.bg > img{
+  opacity: 0.8;
+}
+
+.form-control {
+  background-color: rgb(29, 29, 29) !important;
+  border: 1px solid #0e0e0e !important;
+}
+
+.col {
+  margin-top: 50px;
+}
+
+.player-area {
+  margin-top: 30px;
+  background-color: #222;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  box-shadow: 1px 1px 8px rgba(245, 245, 245, 0.226) !important;
+}
+
+.btn-success {
+  margin-top: 10px;
+}
+
+.game-over{
+  position: fixed !important;
+  top: 25%;
+  left: 33%;
+  padding: 0 10px 10px 10px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif !important; 
+  font-size: 2.0em;
+  color: rgb(155, 0, 0);
+  background-color: rgba(245, 245, 245, 0.76);
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.game-over > h3{
+  font-size: 3.0em;
+}
+
+.hidden {
+  display: none;
+  z-index: -1;
+}
+
+.board-game {
+  position: absolute;
+}
+
+.score{
+  background-color: #afafaf46;
+  color: rgb(32, 32, 32);
+  z-index: 9;
+}
+
+.progress-bar{
+  background-color: rgb(175, 3, 3) !important;
+  font-family: 'Rubik', sans-serif !important; 
+}
+
+#score-p1{
+  border-radius: 10px 0 0 10px;
+}
+
+#score-p2{
+  border-radius: 0 10px 10px 0;
+}
+
+p{
+  font-size: 1.2em !important;
+}

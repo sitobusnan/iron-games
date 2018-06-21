@@ -1,0 +1,103 @@
+body {
+    text-align: center; 
+    background-image: url("images/bg-sky.jpg");
+    background-size: cover;
+    /*background-image: url("Images/Picture1.png")*/
+
+} 
+canvas{
+    padding-top: 27px;
+    padding-left: 28px;
+    border-radius: 50px;
+}
+
+.wrap{
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    float: left;
+} 
+.overlay{
+    background-color: red;
+    background: url("images/Picture2.png");
+    height: 870px;
+    width: 434px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.controlersWrap{
+    float: left;
+    width: auto;
+    height: auto;
+    padding-top: 5%;
+    padding-left: 23%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+}
+
+.logo{;
+    width: 400px;
+    height: 200px; 
+    padding-bottom: 2%;
+}
+
+.logo img{
+    width: auto;
+    max-width: 100%;
+    height: auto; 
+    padding: 5%;
+    box-sizing: border-box; 
+}
+
+
+.controlers{;
+    width: 400px;
+    height: 350px;
+    padding-top: 2%;
+    float: left;
+}
+
+.controlers img{
+    width: auto;
+    max-width: 100%;
+    height: auto; 
+    padding: 5%;
+    box-sizing: border-box; 
+}
+
+.store{;
+    width: 400px;
+    height: 100px;
+    padding-top: 7%;
+}
+
+.store img{
+    width: auto;
+    max-width: 100%;
+    height: auto; 
+    padding: 5%;
+    box-sizing: border-box; 
+}
+
+
+/* img{
+    margin: 50px auto 0;
+    position: absolute;
+    width: 400px;
+    height: 840px;
+
+} */
+/* .iphone{
+    width:375px;
+    height: 812px;
+    position: absolute;
+    top:108px;
+    left: 518px;
+    image: url("Images/Picture1.png");
+    background-size:cover;
+} */ 

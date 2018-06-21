@@ -1,0 +1,99 @@
+body{
+  margin: 0px;
+  background-color: black;
+}
+
+.screen{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
+#app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#board{
+  transform: scale(1.2);
+}
+
+.scanlines{
+  background-image: url("../images/scan-lines.gif");
+  background-size: 64px;
+  background-repeat: repeat;
+  display: none;
+}
+
+.relative{
+  top: 0px;
+  left: 0px;
+  position: relative;
+}
+
+
+
+.posicionable{
+  position: absolute;
+  left: -16px;
+  top: -16px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+
+.box{
+  background-image: url("../images/box_idle.png");
+}
+
+.floortile{
+  background-image: url("../images/marble.png");
+}
+
+.columnn{
+  background-image: url("../images/column.png");
+}
+
+.soldier{
+}
+.soldier.red{
+  background-image: url("../images/soldier_red.png");
+}
+
+.soldier.blue{
+  background-image: url("../images/soldier_blue.png");
+}
+.gun{
+  left: 9px;
+}
+
+.gun.pistol{
+  background-image: url("../images/weapon-gun.png");
+}
+.gun.shotgun{
+  background-image: url("../images/weapon-shotgun.png");
+}
+.gun.rifle{
+  background-image: url("../images/weapon-rifle.png");
+}
+.gun.smg{
+  background-image: url("../images/weapon-smg.png");
+}
+
+.bullet{
+  background-image: url("../images/gun-shot-1.gif");
+}
+
+.pellet{
+  background-image: url("../images/gun-shot-2.gif");
+
+}

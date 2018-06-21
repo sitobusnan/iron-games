@@ -1,0 +1,209 @@
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  overflow: auto;
+}
+canvas,
+.game-over,
+.next-level,
+.win{
+  position: absolute;
+  bottom: calc(100vh - 775px);
+  left: 50vw;
+  margin-left: -240px;
+  border: 5px solid #103da2;
+  margin-top: 50px;
+  z-index: 3;
+}
+.game-over,
+.next-level,
+.win{
+  box-sizing: border-box;
+  height: 710px;
+  width: 490px;
+  z-index: 4;
+  background: rgba(0, 2, 0, .5);
+  padding-top: 200px;
+  box-shadow: 0 0 5px 0px rgba(0,0,0,.3);
+  display: none;
+}
+.win{
+  padding-top: 170px;
+  line-height: 30px;
+  background: rgba(46, 178, 211,.7);
+}
+.win h2{
+  color: #fff;
+  font-size: 100px;
+}
+.next-level{
+  font-size: 80px;
+  color: #fff;
+  line-height: 20px;
+  background:rgba(35, 168, 90,.6);
+}
+.next-level h2{
+  font-size: 200px;
+  margin-top: 130px;
+  
+}
+.game-over .btn{
+  border: 4px solid #fff;
+  background: rgb(35, 168, 90);
+  color: #fff;
+}
+.game-over .btn:hover{
+  background-color: rgba(35, 168, 90,.9);
+}
+.game-over h2{
+  color: #fff;
+  font-size: 40px;
+  text-shadow:0px 0px 10px rgba(0,0,0,.5)
+}
+.roof{
+  width: 480px;
+  height: 700px;
+  position: absolute;
+  bottom: calc(100vh - 775px);
+  left: 50vw;
+  margin-left: -240px;
+  border: 5px solid #103da2;
+  background-color: #85a5af;
+  background-image: url(../img/tile.jpg);
+  margin-top: 50px;
+  z-index: 1;
+  box-shadow: 0 0 5px 0px rgba(0,0,0,.3);
+}
+.hidden{
+  display: none;
+  z-index: 0;
+}
+.intro-cover{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding-top: calc(50vh - 195px);
+  background: #fff;
+}
+.intro-cover h1,
+.intro-cover .btn{
+  z-index: 5;
+}
+.intro-cover h1{
+  margin-bottom: 50px;
+}
+.intro-content{
+  width: 100vw;
+  position: fixed;
+  background: #fff;
+  height: 370px;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 3;
+  box-shadow: 0 0 15px 1px rgba(0,0,0,.5);
+}
+.intro-bg{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/bg1.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.bg-img{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/bg1.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.blue{color:#2eb2d3;}
+.red{color: #d11027;}
+.green{color:#23a85a;}
+.orange{color:#e86800;}
+.title{
+  font-size: 60px;
+}
+.title span{
+  margin: -4px;
+}
+.btn{
+  font-family: 'Dosis', sans-serif;
+  background-color: transparent;
+  border: 8px solid #2eb2d3;
+  background: #fff;
+  color: rgb(46, 178, 211);
+  font-size: 50px;
+  padding: 30px 40px;
+  transition: all ease .2s;
+  border-radius: 20px;
+  outline: none;
+}
+.btn:hover{
+  cursor: pointer;
+  font-size: 54px;
+  background-color: rgba(46, 178, 211,.2);
+}
+.score{ 
+  margin-left: 280px;
+  margin-top: 80px;
+  width: 200px;
+  height: 200px;
+  top: 60px;
+  left: 50%;
+  position: absolute;
+  background-image: url(../img/score.png);
+  background-size: 200px;
+  background-position: 5px;
+  background-repeat: no-repeat;
+  line-height: 230px;
+  text-align: center;
+  color: #23a85a;
+  z-index: 4;
+}
+.sides span{
+  font-size: 48px;
+  font-weight: 800;
+}
+.level{
+  margin-left: 350px;
+  margin-top: 80px;
+  width: 200px;
+  height: 200px;
+  top: 250px;
+  left: 50%;
+  position: absolute;
+  background-image: url(../img/level.png);
+  background-size: 150px;
+  background-position: 16px 20px;
+  line-height: 230px;
+  text-align: center;
+  color: #e86800;
+  background-repeat: no-repeat;
+  z-index: 4;
+  font-size: 60px;
+}
+
+.monster-left{
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  width: 420px;
+  height: auto;
+}
+
+.monster-right{
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  width: 400px;
+  height: auto;
+}

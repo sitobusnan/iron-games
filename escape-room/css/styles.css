@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0,0,0);
+  color: white;
+}
+
+.container {
+  margin-top: 00px;
+}
+
+.inventory {
+  margin: 0 auto;
+  height: 80px;
+  width: 1000px;
+  display: flex;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.inventory img {
+  max-height: 60px;
+  opacity: 0.;
+}
+
+.inventory img:hover {
+  opacity: 0.5;
+  height: 70px;
+  transition: all 0.5s ease-out;
+}
+
+.not-owned {
+  display: none;
+}
+
+.owned {
+  display: inline-flex;
+}
+
+.selected img {
+  opacity: 1;
+  transform: rotate(30deg);
+  transition: all 0.5s ease-out;
+}
+
+.screen {
+  background-color: black;
+  width: 1000px;
+  height: 563px;
+  margin: 0px auto;
+}
+
+#subtitles {
+  padding: 10px;
+  text-align: center;
+}
+
+.item {
+  color: gold;
+}

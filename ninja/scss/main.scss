@@ -1,0 +1,15 @@
+/* para compilar a css y minificar:
+sass --watch scss:css --style compressed
+en el directorio del proyecto*/
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+@import 'recycle';
+@import 'base';
+@import 'animations';
+@import 'first-load';
+@import 'level-selection';
+@import 'game-board';
+@import 'game-result';
+@import 'game-counter';
+@import 'helpers';

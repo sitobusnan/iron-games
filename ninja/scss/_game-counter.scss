@@ -1,0 +1,101 @@
+#game-info {
+      height: 50px;
+      background: transparent;
+      padding: 20px 20px 0;
+      margin-bottom: 50px;
+      .game-logo,.column-wrapper {
+            width: 1600px;
+            max-width: 98%;
+            margin: 0 auto;
+      }
+      .game-logo {
+            margin-bottom: -30px;
+            h2 {
+                  color: white;
+                  margin-top: 0;
+                  .fullstack {
+                        font-family: 'Lekton', Helvetica, Arial, sans-serif;
+                        font-size: .8rem;
+                        font-weight: 100;
+                        letter-spacing: 5px;
+                  }
+                  .ninja {
+                        font-family: 'ninja_narutoregular';
+                        -webkit-text-stroke-width: .1px;
+                        -webkit-text-stroke-color: red;
+                        text-shadow: 0px 0px 120px #000;
+                        transform: rotate(-5deg);
+                        letter-spacing: 5px;
+                        margin-top: -2px;
+                  }
+            }
+      }
+      .ninja-counters,
+      .monster-counters {
+            width: 50%;
+            text-align: left;
+            padding-top: 11px;
+            img {
+                  display: block;
+                  float: left;
+                  border-radius: 50%;
+                  width: 60px;
+            }
+            .ninja-health,
+            .monster-health {
+                  float: left;
+                  width: calc(100% - 80px);
+                  border: 1px solid white;
+                  height: 25px;
+                  border-radius: 10px;
+                  overflow: hidden;
+                  margin: 20px 12px 0 8px;
+                  span.inner {
+                        display: block;
+                        height: 100%;
+                        @include transition(all .3s linear);
+                  }
+            }
+      }
+      .ninja-counters {
+            span.inner {
+                  background: #9f1a2f;
+            }
+            .coins-wrapper {
+                  padding-left: 80px;
+                  padding-top: 55px;
+                  span.coin {
+                        background: url(../img/coin-off.png);
+                        background-size: contain!important;
+                        background-repeat: no-repeat!important;
+                        width: 25px;
+                        height: 26px;
+                        display: inline-block;
+                  }
+            }
+      }
+}
+
+body {
+      &.level1 {
+            .monster-counters {
+                  span {
+                        background: #f5ef80;
+                  }
+            }
+      }
+      &.level2 {
+            .monster-counters {
+                  span {
+                        background: #f3b406;
+                  }
+            }
+      }
+      &.level3 {
+            .monster-counters {
+                  span {
+                        background: #f307b9;
+                  }
+            }
+      }
+}

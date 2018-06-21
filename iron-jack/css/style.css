@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+body {
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  background-color: grey;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding-top: 80px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+#start-game {
+  padding: 50px 100px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+#game {
+  display: none;
+}

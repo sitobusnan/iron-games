@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Puzzle Bobble</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/ball-thrower.js"></script>
+  <script src="./js/balls.js"></script>
+  <script src="./js/board.js"></script>
+  <script src="./js/levels.js"></script>
+  <script src="./js/game.js"></script>
+  <script src="./js/main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:800" rel="stylesheet">
+</head>
+<body>
+  <div id="intro" class="intro-cover">
+    <div class="intro-bg"></div>
+      <div class="intro-content">
+        <h1 class="title">
+        <span class="red">P</span>
+        <span class="blue">U</span>
+        <span class="blue">Z</span>
+        <span class="orange">Z</span>
+        <span class="green">L</span>
+        <span class="orange">E</span> 
+        <span class="orange">_</span> 
+        <span class="red">B</span>
+        <span class="red">O</span>
+        <span class="blue">B</span>
+        <span class="green">B</span>
+        <span class="orange">L</span>
+        <span class="green">E</span>
+      </h1>
+      <button id="start" class="btn start-btn">PLAY</button>
+    </div>  
+  </div>
+
+  <canvas id="canvas" width="480" height="700"></canvas>
+  <div class="roof"></div>
+  <div id="levelContainer" class="level">
+    <span id="level">1</span></div>
+  <div id="scoreContainer" class="sides score">
+    <span id="score">0</span>
+  </div>
+  <div id="gameOver" class="game-over">
+    <h2>GAME OVER!!</h2>
+    <button id="resetLevel" class="btn btn-try">TRY AGAIN!</button>
+  </div>
+  <div id="win" class="win">
+      <h2>YOU</h2>
+      <h2>WIN!!</h2>
+  </div>
+  <div id="next" class="next-level">
+      LEVEL
+      <h2 id="next-level">2</h2>
+  </div>
+  <div id="background" class="bg-img">
+    <img class="monster-left" src="img/bichito-izq.png" alt="">
+    <img class="monster-right" src="img/bichito-der.png" alt="">
+  </div>
+</body>
+</html>

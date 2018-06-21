@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Game project</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  
+  
+</head>
+
+<body>
+  <div class="container">
+    <div class="inventory">
+        <div data-selected="false" class="not-owned" id="corn"><img src="images/items/corn.png" alt="Un puñado de maíz"></div>
+        <div data-selected="false" class="not-owned" id="bowl"><img src="images/items/bowl.png" alt="Un bol azul"></div>
+        <div data-selected="false" class="not-owned" id="pop"><img src="images/items/pop.png" alt="Palomitas"></div>
+        <div data-selected="false" class="not-owned" id="key"><img src="images/items/key.png" alt="Palomitas"></div>
+    </div>
+    <div class="screen">
+      <canvas id="myCanvas" width="1000" height="563">
+      </canvas>
+      <div id="subtitles"></div>
+      
+    </div>  
+  </div>
+  
+  <script src="js/hero.js"></script>
+  <script src="js/items.js"></script>
+  <script src="js/foreground.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/zones.js"></script>
+  <script src="js/actions.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/script.js"></script>
+  
+</body>
+</html>

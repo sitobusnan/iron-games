@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    background: url("../images/bg-3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#myCanvas {
+    margin:0 auto;
+}
+
+
+#logo {
+       height: auto;
+       display: inline-block;
+       width: 100%;
+       max-width: 500px;
+        height: 100px;
+       margin: 0 auto;
+       text-align: center;
+}
