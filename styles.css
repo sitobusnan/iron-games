@@ -1,0 +1,58 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.logo {
+    padding: 50px 0 10px;
+    text-align: center;
+    background: #2d354c;
+    position: relative;
+}
+
+.logo:after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    border-bottom: 65px solid transparent;
+    border-left: 120vw solid #2d354c;
+    left: 0;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    margin: 80px 0 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px dotted grey;
+    padding-bottom: 10px;
+}
+
+a:hover {
+    color: #32c3ff;
+}
