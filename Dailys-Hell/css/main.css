@@ -1,0 +1,97 @@
+@font-face{
+    font-family: 'Arcade Font';
+    src: url(arcade-font.ttf);
+}
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arcade Font';
+}
+
+h1{font-size: 80px}
+
+html {
+    overflow: hidden;
+}
+
+#particles-js{
+    background: #37474F;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+
+    width: 100%;
+    height: 100%;
+}
+
+#splash-screen {
+    transition: all 400ms ease-in-out;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: white;
+}
+
+#splash-screen p{
+    font-size: 1.3em;
+    color: #BDBDBD;
+}
+
+#difficulty-container{
+    width: 800px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#difficulty-container article{
+    margin: 0.3em;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 400ms ease-in-out;
+}
+
+#difficulty-container article:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#difficulty-container article h3{
+    font-size: 1.5em;
+}
+
+#difficulty-container article p{
+    color: #BDBDBD;
+}
+
+#gameStory{
+    color: #1DE9B6;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 999;
+}
+
+#disableParticles{
+    color: #1DE9B6;
+    margin-top: 1em;
+}

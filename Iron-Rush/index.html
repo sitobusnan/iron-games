@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <script src="js/game.js"></script>
+    <script src="js/world.js"></script>
+    <script src="js/hud.js"></script>
+    <script src="js/matrix.js"></script>
+    <script src="js/webgl.js"></script>
+    <script src="js/cube.js"></script>
+    <script src="js/plane.js"></script>
+    <script src="js/line.js"></script>
+    <script src="js/horizontalLine.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div id="initial">
+        <div class="title"></div>
+        <div class="tooltip">Press space to start</div>
+    </div>
+    <div id="gameover" class="hide">
+        <div class="final-data-wrap">
+            <div class="title">OUT!</div>
+            <div id="final-score"></div>
+            <div id="final-distance"></div>
+            <div class="play-again">Press space to play again</div>
+        </div>
+    </div>
+    <div class="hud-wrap" id="hud">
+        <div id="speed">SPEED: 0</div>
+        <div id="distance">DISTANCE: 0</div>
+        <div id="score">SCORE: 0</div>
+    </div>
+    <canvas id="glCanvas" width='1200px' height="700px"></canvas>
+</body>
+</html>

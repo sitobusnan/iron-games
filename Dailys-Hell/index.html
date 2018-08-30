@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dailys Hell</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <canvas id="game-canvas"></canvas>
+    
+    <div id="splash-screen">
+        <h1>Dailys Hell</h1>
+        <p id="pressEnterText">Press space for select difficulty</p>
+        
+        <div id="difficulty-container">
+            <article id="0">
+                <h3>Hard</h3>
+                <p>For script kiddies</p>
+            </article>
+            <article id="1">
+                <h3>Very Hard</h3>
+                <p>For junior developers</p>
+            </article>
+            <article id="2">
+                <h3>1 vs 1</h3>
+                <p>For senior developers</p>
+            </article>
+            <article id="3">
+                <h3>Hardcore</h3>
+                <p>For the masters of the f*cking universe</p>
+            </article>
+            <article id="4">
+                <h3>SandBox</h3>
+                <p>For babys (you can't die)</p>
+            </article>
+        </div>
+
+        <a href="#" id="disableParticles">Enable/Disable Particles Background</a>
+    </div>
+
+    <a href="README.html" id="gameStory">See the Game History</a>
+
+    <embed src="sounds/level1.mp3" autostart="true" loop="true" width="2" height="0"></embed>
+
+    <script src="js/particles.js"></script>
+    <script src="js/finalBoss.js"></script>
+    <script src="js/gameData.js"></script>
+    <script src="js/fireballs.js"></script>
+    <script src="js/pulse.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
